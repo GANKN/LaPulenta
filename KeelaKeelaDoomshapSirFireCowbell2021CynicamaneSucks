@@ -1,0 +1,444 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TELEPORTS = Instance.new("ScreenGui")
+local BASE = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local FoodAdmin = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GunsAdmin1 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local GunsAdmin2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Mountainrev = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Armor = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local AK1 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Casino1 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Schoolmountain = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local AK2 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Casino2 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Alcantrilla = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+
+--Properties:
+
+TELEPORTS.Name = "TELEPORTS"
+TELEPORTS.Parent = game.CoreGui
+
+BASE.Name = "BASE"
+BASE.Parent = TELEPORTS
+BASE.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+BASE.BorderColor3 = Color3.fromRGB(0, 170, 255)
+BASE.BorderSizePixel = 0
+BASE.Position = UDim2.new(0.0451936871, 0, 0.22495088, 0)
+BASE.Size = UDim2.new(0, 359, 0, 239)
+BASE.Active = true
+BASE.Draggable = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(21, 35, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(21, 35, 34))}
+UIGradient.Parent = BASE
+
+UICorner.CornerRadius = UDim.new(0, 1)
+UICorner.Parent = BASE
+
+Frame.Parent = BASE
+Frame.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Frame.Position = UDim2.new(0.0366233476, 0, 0.0627615079, 0)
+Frame.Size = UDim2.new(0, 332, 0, 213)
+
+UICorner_2.Parent = Frame
+
+FoodAdmin.Name = "FoodAdmin"
+FoodAdmin.Parent = BASE
+FoodAdmin.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+FoodAdmin.Position = UDim2.new(0.36809963, 0, 0.0978537202, 0)
+FoodAdmin.Size = UDim2.new(0, 93, 0, 29)
+FoodAdmin.Font = Enum.Font.SourceSans
+FoodAdmin.Text = "FoodAdmin"
+FoodAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+FoodAdmin.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 9)
+UICorner_3.Parent = FoodAdmin
+
+GunsAdmin1.Name = "GunsAdmin 1"
+GunsAdmin1.Parent = BASE
+GunsAdmin1.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+GunsAdmin1.Position = UDim2.new(0.0589074679, 0, 0.245176792, 0)
+GunsAdmin1.Size = UDim2.new(0, 93, 0, 29)
+GunsAdmin1.Font = Enum.Font.SourceSans
+GunsAdmin1.Text = "GunsAdmin 1"
+GunsAdmin1.TextColor3 = Color3.fromRGB(0, 0, 0)
+GunsAdmin1.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = GunsAdmin1
+
+GunsAdmin2.Name = "GunsAdmin 2"
+GunsAdmin2.Parent = BASE
+GunsAdmin2.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+GunsAdmin2.Position = UDim2.new(0.061692968, 0, 0.402750492, 0)
+GunsAdmin2.Size = UDim2.new(0, 93, 0, 29)
+GunsAdmin2.Font = Enum.Font.SourceSans
+GunsAdmin2.Text = "GunsAdmin 2"
+GunsAdmin2.TextColor3 = Color3.fromRGB(0, 0, 0)
+GunsAdmin2.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 9)
+UICorner_5.Parent = GunsAdmin2
+
+Mountainrev.Name = "Mountain rev"
+Mountainrev.Parent = BASE
+Mountainrev.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Mountainrev.Position = UDim2.new(0.0616929606, 0, 0.100106038, 0)
+Mountainrev.Size = UDim2.new(0, 93, 0, 29)
+Mountainrev.Font = Enum.Font.SourceSans
+Mountainrev.Text = "Mountain Rev"
+Mountainrev.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mountainrev.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(0, 9)
+UICorner_6.Parent = Mountainrev
+
+Armor.Name = "Armor"
+Armor.Parent = BASE
+Armor.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Armor.Position = UDim2.new(0.369893312, 0, 0.245176747, 0)
+Armor.Size = UDim2.new(0, 93, 0, 29)
+Armor.Font = Enum.Font.SourceSans
+Armor.Text = "Armor"
+Armor.TextColor3 = Color3.fromRGB(0, 0, 0)
+Armor.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 9)
+UICorner_7.Parent = Armor
+
+AK1.Name = "AK 1"
+AK1.Parent = BASE
+AK1.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+AK1.Position = UDim2.new(0.676300049, 0, 0.399108946, 0)
+AK1.Size = UDim2.new(0, 93, 0, 29)
+AK1.Font = Enum.Font.SourceSans
+AK1.Text = "AK mountai 1"
+AK1.TextColor3 = Color3.fromRGB(0, 0, 0)
+AK1.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(0, 9)
+UICorner_8.Parent = AK1
+
+Casino1.Name = "Casino 1"
+Casino1.Parent = BASE
+Casino1.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Casino1.Position = UDim2.new(0.676300049, 0, 0.100106031, 0)
+Casino1.Size = UDim2.new(0, 93, 0, 29)
+Casino1.Font = Enum.Font.SourceSans
+Casino1.Text = "Casino 1"
+Casino1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Casino1.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0, 9)
+UICorner_9.Parent = Casino1
+
+Schoolmountain.Name = "School mountain"
+Schoolmountain.Parent = BASE
+Schoolmountain.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Schoolmountain.Position = UDim2.new(0.0607011318, 0, 0.553378105, 0)
+Schoolmountain.Size = UDim2.new(0, 93, 0, 29)
+Schoolmountain.Font = Enum.Font.SourceSans
+Schoolmountain.Text = "School Mountain"
+Schoolmountain.TextColor3 = Color3.fromRGB(0, 0, 0)
+Schoolmountain.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(0, 9)
+UICorner_10.Parent = Schoolmountain
+
+TextLabel.Parent = BASE
+TextLabel.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextLabel.Position = UDim2.new(0.222841218, 0, 0.757322192, 0)
+TextLabel.Size = UDim2.new(0, 97, 0, 35)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Hermanito , acuerdate , dalo todo si"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 17.000
+
+AK2.Name = "AK 2"
+AK2.Parent = BASE
+AK2.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+AK2.Position = UDim2.new(0.676300049, 0, 0.554800153, 0)
+AK2.Size = UDim2.new(0, 93, 0, 29)
+AK2.Font = Enum.Font.SourceSans
+AK2.Text = "AK Mountain 2"
+AK2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AK2.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0, 9)
+UICorner_11.Parent = AK2
+
+Casino2.Name = "Casino 2"
+Casino2.Parent = BASE
+Casino2.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Casino2.Position = UDim2.new(0.676300049, 0, 0.245176762, 0)
+Casino2.Size = UDim2.new(0, 93, 0, 29)
+Casino2.Font = Enum.Font.SourceSans
+Casino2.Text = "Casino 2"
+Casino2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Casino2.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(0, 9)
+UICorner_12.Parent = Casino2
+
+Alcantrilla.Name = "Alcantrilla"
+Alcantrilla.Parent = BASE
+Alcantrilla.BackgroundColor3 = Color3.fromRGB(153, 153, 153)
+Alcantrilla.Position = UDim2.new(0.369893312, 0, 0.399988472, 0)
+Alcantrilla.Size = UDim2.new(0, 93, 0, 29)
+Alcantrilla.Font = Enum.Font.SourceSans
+Alcantrilla.Text = "Alcantarilla"
+Alcantrilla.TextColor3 = Color3.fromRGB(0, 0, 0)
+Alcantrilla.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 9)
+UICorner_13.Parent = Alcantrilla
+
+-- Scripts:
+
+local function PSGZEEJ_fake_script() -- BASE.LocalScript 
+	local script = Instance.new('LocalScript', BASE)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "k" then
+			script.Parent.Visible = true         
+		end
+	end)
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "j" then
+			script.Parent.Visible = false      
+		end
+	end)
+end
+coroutine.wrap(PSGZEEJ_fake_script)()
+local function BRKAEJW_fake_script() -- FoodAdmin.LocalScript 
+	local script = Instance.new('LocalScript', FoodAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-787, -40, -933))
+	
+	
+	end)
+end
+coroutine.wrap(BRKAEJW_fake_script)()
+local function IDIA_fake_script() -- GunsAdmin1.LocalScript 
+	local script = Instance.new('LocalScript', GunsAdmin1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-886, -33, -523))
+	
+	
+	end)
+end
+coroutine.wrap(IDIA_fake_script)()
+local function XOOPSX_fake_script() -- GunsAdmin2.LocalScript 
+	local script = Instance.new('LocalScript', GunsAdmin2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-810, -40, -929))
+	
+	
+	end)
+end
+coroutine.wrap(XOOPSX_fake_script)()
+local function FTFOADW_fake_script() -- Mountainrev.LocalScript 
+	local script = Instance.new('LocalScript', Mountainrev)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-693, 168, -34))
+	
+	
+	end)
+end
+coroutine.wrap(FTFOADW_fake_script)()
+local function WYGJ_fake_script() -- Armor.LocalScript 
+	local script = Instance.new('LocalScript', Armor)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-932, -29, 566))
+	
+	
+	end)
+	
+end
+coroutine.wrap(WYGJ_fake_script)()
+local function WBGAWKK_fake_script() -- AK1.LocalScript 
+	local script = Instance.new('LocalScript', AK1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-767, 140, -688))
+	
+	
+	end)
+end
+coroutine.wrap(WBGAWKK_fake_script)()
+local function GIFSQU_fake_script() -- Casino1.LocalScript 
+	local script = Instance.new('LocalScript', Casino1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-862, 114, -30))
+	
+	
+	end)
+	
+end
+coroutine.wrap(GIFSQU_fake_script)()
+local function YBHUNZD_fake_script() -- Schoolmountain.LocalScript 
+	local script = Instance.new('LocalScript', Schoolmountain)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-494, 154, 488))
+	
+	
+	end)
+end
+coroutine.wrap(YBHUNZD_fake_script)()
+local function VPDSX_fake_script() -- BASE.LocalScript 
+	local script = Instance.new('LocalScript', BASE)
+
+	local player = game.Players.LocalPlayer
+	local prefix = "s"
+	
+	player.Chatted:Connect(function(m)
+		if m:lower() == prefix.."vest" then
+			local origin = player.Character.HumanoidRootPart.CFrame
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[High-Medium Armor] - $2300"].Head.CFrame
+			wait(.5)
+			fireclickdetector(game.Workspace.Ignored.Shop["[High-Medium Armor] - $2300"].ClickDetector)
+			player.Character.HumanoidRootPart.CFrame = origin
+		elseif m:lower() == prefix.."db" then
+			local origin = player.Character.HumanoidRootPart.CFrame
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Double-Barrel SG] - $1400"].Head.CFrame
+			wait(1)
+			fireclickdetector(game.Workspace.Ignored.Shop["[Double-Barrel SG] - $1400"].ClickDetector)
+			player.Character.HumanoidRootPart.CFrame = origin
+			for i = 1,10 do
+				player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].Head.CFrame
+				wait(.2)
+				fireclickdetector(game.Workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].ClickDetector)
+			end
+			player.Character.HumanoidRootPart.CFrame = origin
+		elseif m:lower() == prefix.."rev" then
+			local origin = player.Character.HumanoidRootPart.CFrame
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Revolver] - $1300"].Head.CFrame
+			wait(1)
+			fireclickdetector(game.Workspace.Ignored.Shop["[Revolver] - $1300"].ClickDetector)
+			player.Character.HumanoidRootPart.CFrame = origin
+			for i = 1,15 do
+				player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["12 [Revolver Ammo] - $75"].Head.CFrame
+				wait(.2)
+				fireclickdetector(game.Workspace.Ignored.Shop["12 [Revolver Ammo] - $75"].ClickDetector)
+			end
+			player.Character.HumanoidRootPart.CFrame = origin
+		elseif m:lower() == prefix.."food" then
+			local origin = player.Character.HumanoidRootPart.CFrame
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Hamburger] - $5"].Head.CFrame
+			wait(.5)
+			fireclickdetector(game.Workspace.Ignored.Shop["[Hamburger] - $5"].ClickDetector)
+			wait(.2)
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Taco] - $4"].Head.CFrame
+			wait(.5)
+			fireclickdetector(game.Workspace.Ignored.Shop["[Taco] - $4"].ClickDetector)
+			player.Character.HumanoidRootPart.CFrame = origin
+		elseif m:lower() == prefix.."sa" then -- silent armor
+			local origin = player.Character.HumanoidRootPart.CFrame
+			player.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[High-Medium Armor] - $2300"].Head.CFrame
+			wait(.5)
+			fireclickdetector(game.Workspace.Ignored.Shop["[High-Medium Armor] - $2300"].ClickDetector)
+			player.Character.HumanoidRootPart.CFrame = origin
+		end
+	end)
+end
+coroutine.wrap(VPDSX_fake_script)()
+local function FABBAF_fake_script() -- AK2.LocalScript 
+	local script = Instance.new('LocalScript', AK2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-429, 89, -992))
+	
+	
+	end)
+	
+end
+coroutine.wrap(FABBAF_fake_script)()
+local function CEGUDZE_fake_script() -- Casino2.LocalScript 
+	local script = Instance.new('LocalScript', Casino2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-1082, 104, -227))
+	
+	
+	end)
+	
+end
+coroutine.wrap(CEGUDZE_fake_script)()
+local function QWTPL_fake_script() -- Alcantrilla.LocalScript 
+	local script = Instance.new('LocalScript', Alcantrilla)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-748, -25, 93))
+	
+	
+	end)
+	
+end
+coroutine.wrap(QWTPL_fake_script)()
+local function VQBQBZX_fake_script() -- BASE.LocalScript 
+	local script = Instance.new('LocalScript', BASE)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Da%20Hood/SilentAimAimLock.lua"))()
+	DaHoodSettings.Prediction = 0.240
+	Aiming.TargetPart = {"Head", "HumanoidRootPart"}
+	Aiming.FOV = 40
+	Aiming.FOVSides = 25
+	Aiming.HitChance = 110
+	Aiming.ShowFOV = true
+	
+end
+coroutine.wrap(VQBQBZX_fake_script)()
